@@ -1,0 +1,40 @@
+<% include ../partials/header.ejs %>
+<div class="container text-center">
+<form method="post" action="/books/add">
+        <h5>Add new book</h5>
+    <div class="input-group ">
+        <span class="input-group-addon">Title</span>
+        <input type="text" name="Title" class="form-control" placeholder="Title  " required>
+
+    </div>
+        <br>
+    <div class="input-group">
+        <span class="input-group-addon">Price</span>
+        <input type="text" name="Price" class="form-control" placeholder="Price " required>
+
+    </div>
+    <br>
+<div class="input-group">
+    <span class="input-group-addon">Author</span>
+    <input type="text" name="Author" class="form-control" placeholder="Authors Name " required>
+    
+</div>
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon">Genre</span>
+        <input type="text" name="Genre" class="form-control" placeholder="Genre Name " required>
+
+    </div>
+    <br>
+<div class="input-group">
+    <span class="input-group-addon" id="basic-addon3">Description</span>
+    <textarea rows="3" name="Description" class="form-control" id="basic-url" aria-describedby="basic-addon3"></textarea>
+</div>
+    <br>
+    <button type="submit" class="btn btn-block btn-primary">SUBMIT</button>
+
+</form>
+</div>
+<% include ../partials/footer.ejs %>
+
+
